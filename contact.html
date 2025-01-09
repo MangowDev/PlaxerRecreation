@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrapCSS/bootstrap.css" />
+    <title>GameFusion Studios</title>
+  </head>
+  <body>
+    <!-- Header section with navigation bar -->
+    <header>
+      <nav id="mynav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Company logo with a link to the homepage -->
+          <a class="navbar-logo" href="#">
+            <img src="assets/logos/logo-light.png" alt="logo-img" />
+          </a>
+
+          <!-- Button for toggling navigation in mobile view -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto navbar-links">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="blog.html">Blog</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="shop.html">Shop</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Map Section -->
+    <div class="container-fluid map-container">
+      <!-- Embedded Google Map -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8218.869073624432!2d-3.5994830624134613!3d37.17635812612986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcc82c7f5883%3A0x15138785e068fd19!2sP.%C2%BA%20de%20los%20Tristes%2C%20Albaic%C3%ADn%2C%2018010%20Granada!5e1!3m2!1ses!2ses!4v1731433533120!5m2!1ses!2ses"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container contact-container">
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+          <h3 class="contact-title">Don’t shy to Contact us.</h3>
+          <!-- Contact Form -->
+          <form>
+            <div class="row">
+              <!-- Name Input Field -->
+              <div class="col-lg-6 col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <!-- Email Input Field -->
+              <div class="col-lg-6 col-md-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your E-mail"
+                />
+              </div>
+            </div>
+            <!-- Message Input Field -->
+            <div>
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="send-button">Send</button>
+          </form>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="col-lg-4 contact-info">
+          <h5>Location</h5>
+          <p>Baker Street 223 B, London 423668</p>
+          <h5>Phone</h5>
+          <p>+1 623-812-4957</p>
+          <h5>E-mail</h5>
+          <p>support@promo-theme.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row justify-content-center align-items-center text-center">
+          <!-- First Column: Company logo, email subscription, and quote -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <!-- Company logo -->
+            <img src="assets/logos/logo-light.png" /><br />
+            <!-- Email input field for subscription -->
+            <input type="email" placeholder="Enter your email" />
+            <!-- Subscribe button with an icon -->
+            <div class="suscribe-div">
+              <a href="#"> <i class="fa-solid fa-arrow-right"></i>Subscribe</a>
+            </div>
+            <!-- Motivational quote -->
+            <p>The world without photography will be meaningless to us.</p>
+          </div>
+
+          <!-- Second Column: Company address, phone, email, and social media links -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Address</h6>
+            <!-- Address, working hours, phone, and email -->
+            <p>Baker Street 223b London, CA 70413 Open: 9:30 AM - 5:30 PM</p>
+            <p>Phone: +1 (800) 456 37 11</p>
+            <p>Email: support@promo-theme.com</p>
+            <!-- Social media icons -->
+            <div class="social-media-div">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+
+          <!-- Third Column: Recent posts -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Posts</h6>
+            <!-- Recent blog posts with dates -->
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+          </div>
+
+          <!-- Fourth Column: Recent comments -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Comments</h6>
+            <!-- Recent comments by users -->
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script to load Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/8b39d50696.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External JavaScript file for custom functionality -->
+    <script src="javascript/app.js"></script>
+
+    <!-- Bootstrap JavaScript file for responsive design and components -->
+    <script src="bootstrapJS/bootstrap.js"></script>
+  </body>
+</html>

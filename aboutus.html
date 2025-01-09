@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrapCSS/bootstrap.css" />
+    <title>GameFusion Studios</title>
+  </head>
+  <body>
+    <!-- Header section with navigation bar -->
+    <header>
+      <nav id="mynav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Company logo with a link to the homepage -->
+          <a class="navbar-logo" href="#">
+            <img src="assets/logos/logo-light.png" alt="logo-img" />
+          </a>
+
+          <!-- Button for toggling navigation in mobile view -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto navbar-links">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="blog.html">Blog</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="shop.html">Shop</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- About Us Section Header -->
+    <div class="container-fluid blog-title-container">
+      <div class="container blog-title-div">
+        <!-- Title of the section -->
+        <h3>About us</h3>
+      </div>
+    </div>
+
+    <!-- Main About Us Content Section -->
+    <div class="container about-us-info-container">
+      <div class="row justify-content-center align-items-center text-center">
+        <!-- Left Column: Image of a gamer -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center about-us-info-col"
+        >
+          <!-- Image representing the company or theme -->
+          <img src="assets/content-img/gamer.jpg" />
+        </div>
+
+        <!-- Right Column: Accordion navigation and content -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left about-us-info-col"
+        >
+          <!-- Accordion Navigation (buttons to toggle accordion sections) -->
+          <div class="accordion-nav d-flex justify-content-left mb-3">
+            <!-- Button for the "About" section -->
+            <button
+              class="btn me-2 accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              About
+            </button>
+            <!-- Button for the "Schedule" section -->
+            <button
+              class="btn me-2 accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Schedule
+            </button>
+            <!-- Button for the "Location" section -->
+            <button
+              class="btn accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Location
+            </button>
+          </div>
+
+          <!-- Accordion Sections with Content -->
+          <div class="accordion" id="accordionExample">
+            <!-- About Section -->
+            <div class="accordion-item">
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <!-- Heading and description for the "About" section -->
+                  <h5>
+                    Just design & compose, cooperating with clients who want the
+                    best for their business.
+                  </h5>
+                  <br />
+                  <p>
+                    We’re a design studio with more than 13 years of experience
+                    in branding and digital. Throughout these years, we
+                    re-discovered the essence of our clients. We create
+                    innovative digital products and future-oriented brands. Our
+                    premise is to always drive a positive change in people,
+                    companies, and organizations.
+                  </p>
+                  <br />
+                  <!-- Link to read more -->
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Schedule Section -->
+            <div class="accordion-item">
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <!-- Heading and description for the "Schedule" section -->
+                  <h5>
+                    Just design & compose, cooperating with clients who want the
+                    best for their business.
+                  </h5>
+                  <br />
+                  <p>
+                    We’re a design studio with more than 13 years of experience
+                    in branding and digital. Throughout these years, we
+                    re-discovered the essence of our clients. We create
+                    innovative digital products and future-oriented brands. Our
+                    premise is to always drive a positive change in people,
+                    companies, and organizations.
+                  </p>
+                  <br />
+                  <!-- Link to read more -->
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Section -->
+            <div class="accordion-item">
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <!-- Heading and description for the "Location" section -->
+                  <h5>
+                    Just design & compose, cooperating with clients who want the
+                    best for their business.
+                  </h5>
+                  <br />
+                  <p>
+                    We’re a design studio with more than 13 years of experience
+                    in branding and digital. Throughout these years, we
+                    re-discovered the essence of our clients. We create
+                    innovative digital products and future-oriented brands. Our
+                    premise is to always drive a positive change in people,
+                    companies, and organizations.
+                  </p>
+                  <br />
+                  <!-- Link to read more -->
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counter Section to showcase various statistics -->
+    <div id="counterContainer" class="container-fluid counter-container">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Twitch Stream counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-brands fa-twitch fa-4x"></i>
+            <h4 id="counter1">1300+</h4>
+            <p>TWITCH STREAMS</p>
+          </div>
+          <!-- YouTube Stream counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-brands fa-youtube fa-4x"></i>
+            <h4 id="counter2">1100+</h4>
+            <p>YOUTUBE STREAMS</p>
+          </div>
+          <!-- Past Games counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-solid fa-computer fa-4x"></i>
+            <h4 id="counter3">900+</h4>
+            <p>PAST GAMES</p>
+          </div>
+          <!-- Professional Teams counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-solid fa-users-rectangle fa-4x"></i>
+            <h4 id="counter4">236+</h4>
+            <p>PRO TEAMS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Section -->
+    <div class="container-fluid team-container">
+      <!-- Row to center the team members -->
+      <div class="row justify-content-center">
+        <!-- Team Member 1 -->
+        <div
+          class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-left justify-content-left text-left team-col"
+        >
+          <!-- Image of the team member -->
+          <img src="./assets/content-img/gamer.jpg" />
+          <!-- Name of the team member -->
+          <p>DORA SOREN</p>
+          <!-- Social media icons for the team member -->
+          <div class="social-media-div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <!-- Team Member 2  -->
+        <div
+          class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-left justify-content-left text-left team-col"
+        >
+          <!-- Image of the team member -->
+          <img src="./assets/content-img/gamer2.jpg" />
+          <!-- Name of the team member -->
+          <p>TIM GAREN</p>
+          <!-- Social media icons for the team member -->
+          <div class="social-media-div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <!-- Team Member 3  -->
+        <div
+          class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-left justify-content-left text-left team-col"
+        >
+          <!-- Image of the team member -->
+          <img src="./assets/content-img/gamer3.jpg" />
+          <!-- Name of the team member -->
+          <p>TONY JOHNS</p>
+          <!-- Social media icons for the team member -->
+          <div class="social-media-div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <!-- Team Member 4  -->
+        <div
+          class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-left justify-content-left text-left team-col"
+        >
+          <!-- Image of the team member -->
+          <img src="./assets/content-img/gamer4.jpg" />
+          <!-- Name of the team member -->
+          <p>ANDRY LINCOLN</p>
+          <!-- Social media icons for the team member -->
+          <div class="social-media-div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div
+          class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-left justify-content-left text-left team-col"
+        >
+          <!-- Image of the team member -->
+          <img src="./assets/content-img/counter.jpg" />
+          <!-- Name of the team member -->
+          <p>PETE JOHNSON</p>
+          <!-- Social media icons for the team member -->
+          <div class="social-media-div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Moments Section -->
+    <div class="container-fluid matches-container">
+      <!-- Container holding all match details -->
+      <div class="container matches-div">
+        <!-- Header for the "Best Moments" section -->
+        <div class="latest-matches-div">
+          <h3>Best moments</h3>
+
+          <!-- Filter for the different categories of games and streams -->
+          <div>
+            <div class="row">
+              <div class="filter-div">
+                <!-- Filter options for different games and streams -->
+                <span class="filter-text">ALL</span>
+                <span>/</span>
+                <span class="filter-text">DOTA 2</span>
+                <span>/</span>
+                <span class="filter-text">FORTNITE</span>
+                <span>/</span>
+                <span class="filter-text">CSGO</span>
+                <span>/</span>
+                <span class="filter-text">PUBG</span>
+                <span>/</span>
+                <span class="filter-text">STREAMS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Match Row 1 -->
+        <div class="row justify-content-center match-row">
+          <!-- Team Image -->
+          <div
+            class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/counter.jpg"
+              class="gaming-img img-fluid"
+            />
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center text-left ms-5"
+          >
+            <h5>ESPORT LEAGUE-CS GO DIVISION</h5>
+            <p>DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info with Twitch Icon -->
+          <div
+            class="col-12 col-sm-12 col-md-3 d-flex flex-row justify-content-center text-center align-items-center streaming-div"
+          >
+            <i class="fa-brands fa-twitch fa-2x"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+
+        <!-- Match Row 2 -->
+        <div class="row justify-content-center match-row">
+          <!-- Team Image -->
+          <div
+            class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/counter.jpg"
+              class="gaming-img img-fluid"
+            />
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center text-left ms-5"
+          >
+            <h5>ESPORT LEAGUE-CS GO DIVISION</h5>
+            <p>DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-12 col-sm-12 col-md-3 d-flex flex-row justify-content-center text-center align-items-center streaming-div"
+          >
+            <i class="fa-brands fa-twitch fa-2x"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+
+        <!-- Match Row 3 -->
+        <div class="row justify-content-center match-row">
+          <!-- Team Image -->
+          <div
+            class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/counter.jpg"
+              class="gaming-img img-fluid"
+            />
+          </div>
+          <!-- Match Info -->
+          <div
+            class="col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center text-left ms-5"
+          >
+            <h5>ESPORT LEAGUE-CS GO DIVISION</h5>
+            <p>DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+          <!-- Streaming Info -->
+          <div
+            class="col-12 col-sm-12 col-md-3 d-flex flex-row justify-content-center text-center align-items-center streaming-div"
+          >
+            <i class="fa-brands fa-twitch fa-2x"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+        <!-- Match Row 4 -->
+        <div class="row justify-content-center match-row">
+          <!-- Team Image -->
+          <div
+            class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/counter.jpg"
+              class="gaming-img img-fluid"
+            />
+          </div>
+          <!-- Match Info -->
+          <div
+            class="col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center text-left ms-5"
+          >
+            <h5>ESPORT LEAGUE-CS GO DIVISION</h5>
+            <p>DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+          <!-- Streaming Info -->
+          <div
+            class="col-12 col-sm-12 col-md-3 d-flex flex-row justify-content-center text-center align-items-center streaming-div"
+          >
+            <i class="fa-brands fa-twitch fa-2x"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Share Section -->
+    <div class="container-fluid share-container">
+      <!-- Title row to prompt sharing -->
+      <div class="row justify-content-center row1">
+        <div
+          class="col-12 d-flex flex-column align-items-center justify-content-center text-center share-title-col"
+        >
+          <h4>Share with <span>#GameFusionStudios</span></h4>
+        </div>
+      </div>
+      <!-- Row with a call to action to follow on social media -->
+      <div class="row justify-content-center row2">
+        <div
+          class="col-12 d-flex flex-column align-items-center justify-content-center text-center share-p-col"
+        >
+          <p>Follow me @GameFusionStudios</p>
+        </div>
+      </div>
+      <!-- Image gallery row -->
+      <div
+        class="row justify-content-center align-items-center text-center row3 g-0"
+      >
+        <!-- First set of images to share -->
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/cyberpunk.jpg" alt="Image 1" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/game-console.jpg" alt="Image 2" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img1.jpg" alt="Image 3" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img2.jpg" alt="Image 4" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img3.jpg" alt="Image 5" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/robots.jpg" alt="Image 6" />
+        </div>
+        <!-- Additional images for sharing -->
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/cyberpunk.jpg" alt="Image 7" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/game-console.jpg" alt="Image 8" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img1.jpg" alt="Image 9" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img2.jpg" alt="Image 10" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img3.jpg" alt="Image 11" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/robots.jpg" alt="Image 12" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row justify-content-center align-items-center text-center">
+          <!-- First Column: Company logo, email subscription, and quote -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <!-- Company logo -->
+            <img src="assets/logos/logo-light.png" /><br />
+            <!-- Email input field for subscription -->
+            <input type="email" placeholder="Enter your email" />
+            <!-- Subscribe button with an icon -->
+            <div class="suscribe-div">
+              <a href="#"> <i class="fa-solid fa-arrow-right"></i>Subscribe</a>
+            </div>
+            <!-- Motivational quote -->
+            <p>The world without photography will be meaningless to us.</p>
+          </div>
+
+          <!-- Second Column: Company address, phone, email, and social media links -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Address</h6>
+            <!-- Address, working hours, phone, and email -->
+            <p>Baker Street 223b London, CA 70413 Open: 9:30 AM - 5:30 PM</p>
+            <p>Phone: +1 (800) 456 37 11</p>
+            <p>Email: support@promo-theme.com</p>
+            <!-- Social media icons -->
+            <div class="social-media-div">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+
+          <!-- Third Column: Recent posts -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Posts</h6>
+            <!-- Recent blog posts with dates -->
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+          </div>
+
+          <!-- Fourth Column: Recent comments -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Comments</h6>
+            <!-- Recent comments by users -->
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script to load Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/8b39d50696.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External JavaScript file for custom functionality -->
+    <script src="javascript/app.js"></script>
+
+    <!-- Bootstrap JavaScript file for responsive design and components -->
+    <script src="bootstrapJS/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1336 @@
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Import custom font "Proxima Nova" */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/proximanova_regular.ttf") format("truetype"),
+    url("../assets/fonts/Proxima Nova/proximanova_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Basic reset and background color for the body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000 !important; /* Ensures the background is black across all pages */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Navbar styling with smooth transitions */
+nav.navbar {
+  background-color: transparent; /* Initially transparent */
+  padding: 20px;
+  transition: 0.4s; /* Smooth transition for background color change */
+}
+
+nav.navbar-scroll {
+  background-color: #000; /* Black background when scrolled */
+  padding: 20px;
+  transition: 0.4s;
+}
+
+/* Navbar links styling with hover effect */
+.navbar-links a {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin: 0 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Underline effect for navbar links */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #0750d0; /* Blue underline */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left; /* Animate the underline from left to right */
+}
+
+/* Custom containers with background images for carousel */
+div.custom-container, div.custom-container2, div.custom-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  flex-direction: column;
+}
+
+/* Each container has a different background image */
+div.custom-container {
+  background-image: url("../assets/background-img/img1.jpg");
+}
+div.custom-container2 {
+  background-image: url("../assets/background-img/img2.jpg");
+}
+div.custom-container3 {
+  background-image: url("../assets/background-img/img3.jpg");
+}
+
+/* Title section styling */
+div.title-div span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+div.title-div h2 {
+  color: #fff;
+  text-align: left;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  max-width: 500px;
+}
+
+div.title-div button {
+  color: #fff;
+  background: linear-gradient(135deg, #a1052c, #0750d0); /* Gradient background */
+  font-family: "Poppins", sans-serif;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 0;
+  font-weight: 600;
+  border: none;
+}
+
+div.title-div button:hover {
+  background: linear-gradient(135deg, #890626, #0640a5); /* Darker gradient on hover */
+}
+
+/* Services section with dark background and gradient */
+div.services-container {
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(2, 14, 34, 1) 100%); /* Gradient background */
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* Individual service columns with hover effect */
+div.services-col {
+  padding: 40px;
+  margin: 20px;
+  margin-top: 0;
+  border: 1px solid #3b3b3b;
+  background: #090909;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Gradient overlay effect on service columns */
+div.services-col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #61041c, #053484); /* Gradient from dark red to blue */
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+
+div.services-col:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Ensuring content stays above overlay */
+div.services-col * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Service column heading and paragraph styles */
+div.services-col h5 {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+div.services-col p {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* About Us section styling */
+div.about-us-container {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  color: #fff;
+  background-color: #000;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* About Us column styling for heading and paragraph */
+div.about-us-col h4 {
+  font-size: 36px;
+  text-align: left;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+div.about-us-col p {
+  font-size: 16px;
+  text-align: left;
+  padding-right: 70px;
+}
+
+/* About Us link styling with hover effect */
+.about-us-col a {
+  position: relative;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Underline effect for About Us links */
+.about-us-col a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0750d0; /* Blue underline */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.about-us-col a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left; /* Animate the underline from left to right */
+}
+
+/* First About Us column has custom margins */
+div.about-us-col:first-child {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+/* Container for recent items, adds padding and sets position */
+.recent-container {
+  padding: 0 10px; 
+  position: relative; /* Allows absolute positioning of child elements */
+}
+
+/* Removes margin for the recent row */
+.recent-row {
+  margin: 0;
+}
+
+/* Container for each recent item, allows positioning */
+.recent-col {
+  position: relative;
+}
+
+/* Container for images in recent items */
+.img-recent-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Ensures images don’t spill outside the container */
+}
+
+/* Ensures images in recent items are responsive, set height to 300px */
+.recent-col img {
+  width: 100%; 
+  height: 300px;
+}
+
+/* Text overlay for images in the recent section */
+.img-text {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  position: absolute;
+  bottom: 0; /* Positioned at the bottom of the image */
+  left: 0; /* Positioned at the left */
+  font-size: 20px;
+  font-weight: 600;
+  width: calc(100% - 20px); /* Full width minus padding */
+}
+
+/* Styling for the recent item text and layout */
+div.recent-col-row {
+  color: #fff; /* White text color */
+  text-align: left; /* Aligns text to the left */
+  padding: 10px;
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: row; /* Aligns child elements in a row */
+}
+
+/* Ensures font family is consistent for the text in the recent row */
+div.recent-col-row span {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* Style for info span text */
+.info-span {
+  font-size: 13px; /* Smaller text for info */
+}
+
+/* Info text with blue color and bold font */
+.info-blue-span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0750d0; 
+}
+
+/* Styling for the unicon section, with a fixed background */
+div.unicon-container {
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed; /* Background fixed while scrolling */
+  display: flex;
+  background-image: url("../assets/content-img/future.jpg"); /* Background image */
+  background-size: cover; /* Ensure image covers the area */
+  background-position: center; /* Center the image */
+  height: 400px; /* Fixed height */
+  flex-direction: column;
+}
+
+/* Color and text settings for columns in the unicon section */
+div.unicon-col {
+  color: #fff; 
+}
+
+/* Header text inside the unicon section */
+div.unicon-col h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* Paragraph text inside the unicon section */
+div.unicon-col p {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  width: 400px; /* Fixed width for text */
+}
+
+/* Button styling in the unicon section */
+div.unicon-col button {
+  color: #fff;
+  background: linear-gradient(135deg, #a1052c, #0750d0); /* Gradient background */
+  width: fit-content; /* Fit button content width */
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 0; /* No border radius */
+  font-weight: 600;
+  border: none; /* Removes border */
+}
+
+/* Hover effect for the button in unicon section */
+div.unicon-col button:hover {
+  background: linear-gradient(135deg, #890626, #0640a5); /* Darker gradient on hover */
+}
+
+/* Styling for counter section */
+div.counter-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #fff; 
+}
+
+/* Header text for the counter section */
+div.counter-col h4 {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0 10px 0; 
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* Paragraph text in counter section */
+div.counter-col p {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* Share section container with top margin */
+div.share-container {
+  margin-top: 80px;
+  color: #fff; 
+}
+
+/* Header styling for the share section */
+div.share-title-col h4 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Blue-colored span inside the share section header */
+div.share-title-col span {
+  color: #0750d0; 
+}
+
+/* Paragraph styling in the share section */
+div.share-p-col p {
+  color: #fff; 
+  font-size: 16px;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* Image styling in the share section */
+div.share-img-col img {
+  width: 100%; 
+  height: 130px; 
+  margin-bottom: 20px; 
+  margin-top: 10px; 
+}
+
+/* Latest matches div structure */
+
+.latest-matches-div {
+  width: 100%;  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+}
+
+
+/* Matches section container */
+div.matches-container {
+  margin-top: 80px; 
+  color: #fff; 
+}
+
+/* Heading for matches section */
+div.matches-container h3 {
+  font-size: 40px; 
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px; 
+}
+
+/* Individual match row styling */
+div.match-row {
+  background-color: #010d22; /* Dark background color */
+  padding: 30px; 
+  margin-bottom: 10px; /* Space below each match row */
+  position: relative; /* Relative positioning for child elements */
+  overflow: hidden; /* Hide any overflow */
+  transition: 0.3s; 
+  z-index: 1; /* Place this element above others */
+}
+
+/* Pseudo-element for background gradient effect on hover */
+div.match-row::before {
+  content: ""; /* Empty content */
+  position: absolute; /* Absolute position */
+  top: 0; left: 0; right: 0; bottom: 0; /* Full coverage of the parent element */
+  background: linear-gradient(135deg, #61041c, #053484); /* Gradient from red to blue */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; 
+  z-index: -1; /* Behind the match row content */
+}
+
+/* On hover, the gradient becomes visible */
+div.match-row:hover::before {
+  opacity: 1; /* Show the gradient */
+}
+
+/* Header inside each match row */
+div.match-row h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px; 
+}
+
+/* Paragraph text styling inside match row */
+div.match-row p {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400; 
+}
+
+/* Span text styling inside match row */
+div.match-row span {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600; 
+}
+
+/* Styling for team details */
+div.team-div {
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 20px; 
+}
+
+/* Blue color and bold text for team number */
+div.team-div span {
+  color: #0750d0; 
+  font-weight: 600; 
+}
+
+/* Styling for the streaming section */
+div.streaming-div span {
+  margin-left: 10px; 
+}
+
+/* Gaming logo image size */
+.gaming-logo {
+  width: 100px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; 
+}
+
+/* Footer */ 
+footer {
+  background-color: #1e1e1e; /* Dark background for footer */
+}
+
+/* Styling for footer columns */
+div.footer-col {
+  color: #fff; 
+  margin: 30px 0; /* Space above and below the footer columns */
+}
+
+/* Footer column images */
+div.footer-col img {
+  width: 175px; /* Fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer input fields styling */
+div.footer-col input {
+  font-size: 14px;
+  font-family: "Proxima Nova", sans-serif;
+  border: none;
+  border-bottom: 1px solid #343434;
+  outline: none;
+  background-color: #1e1e1e;
+}
+
+
+/* Paragraph text in footer columns */
+div.footer-col p {
+  text-align: left; 
+  margin-top: 10px; 
+  font-size: 16px; 
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* Subscribe section container */
+.suscribe-div {
+  margin-top: 10px; 
+  color: #fff; 
+  align-items: center; /* Center items vertically */
+  display: flex; /* Flexbox for layout */
+}
+
+/* Link styling in the subscribe section */
+.suscribe-div a {
+  color: #fff; 
+  text-align: left; 
+  font-family: "Proxima Nova", sans-serif;
+  text-decoration: none; 
+  font-weight: 500; 
+  font-size: 18px; 
+}
+
+/* Icon inside the subscribe section */
+.suscribe-div i {
+  margin-right: 10px; 
+}
+
+/* Hover effect for subscribe link */
+.suscribe-div a:hover {
+  color: #0750d0; /* Change to blue on hover */
+  transition: 0.3s; 
+}
+
+/* Header styling in footer columns */
+div.footer-col h6 {
+  text-align: left; /* Align text to the left */
+  font-size: 18px; /* Larger font size */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Footer column text in second section */
+div.footer-col:nth-child(2) p {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px; 
+}
+
+/* Footer column text in third section */
+div.footer-col:nth-child(3) p {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px; 
+  margin-top: 5px; /* Space above text */
+}
+
+/* Footer column span text in third section */
+div.footer-col:nth-child(3) span {
+  text-align: left; /* Align text to the left */
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px; 
+  color: #c7c7c7; 
+}
+
+/* Footer column text in fourth section */
+div.footer-col:nth-child(4) p {
+  width: 250px; /* Fixed width */
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px; 
+  margin-top: 5px; /* Space above text */
+}
+
+/* Footer column span text in fourth section */
+div.footer-col:nth-child(4) span {
+  text-align: left; /* Align text to the left */
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px; 
+  color: #c7c7c7; 
+}
+
+/* Social media icons container */
+.social-media-div {
+  justify-content: left; /* Align icons to the left */
+  display: flex; /* Flexbox for icons */
+}
+
+/* Social media icon styling */
+.social-media-div i {
+  margin: 5px; 
+}
+
+/* Hover effect for social media icons */
+.social-media-div i:hover {
+  cursor: pointer; /* Show pointer cursor */
+  transition: 0.3s; 
+  color: #0750d0; /* Change color to blue on hover */
+}
+
+/** BLOG **/
+
+/* Blog title container styling */
+div.blog-title-container {
+  padding-top: 120px; /* Space above the blog title */
+  padding-bottom: 40px; /* Space below the blog title */
+  margin-bottom: 100px; /* Margin below the blog section */
+  background-color: #131313; /* Dark background for the blog section */
+}
+
+/* Blog title styling */
+div.blog-title-div {
+  color: #fff; 
+}
+
+/* Blog title heading styling */
+div.blog-title-div h3 {
+  font-size: 40px; 
+  font-weight: 600; 
+  font-family: "Poppins", sans-serif; 
+}
+
+/* Styling for individual blog columns */
+div.blog-col {
+  color: #fff; 
+  text-align: left; 
+  margin-bottom: 50px; 
+}
+
+/* Blog column images styling */
+div.blog-col img {
+  width: 100%; 
+  height: 230px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the space without distortion */
+}
+
+/* Date styling in blog columns */
+div.blog-col span {
+  font-size: 12px; 
+  font-family: "Proxima Nova", sans-serif; 
+  margin: 10px 0; 
+}
+
+/* Blog post paragraph styling */
+div.blog-col p {
+  font-size: 16px; 
+  font-weight: 500; 
+  font-family: "Poppins", sans-serif; 
+  margin-bottom: 10px; /* Space below each paragraph */
+}
+
+/* Hover effect for blog paragraphs */
+div.blog-col p:hover {
+  color: #0750d0; /* Change color to blue on hover */
+  transition: 0.3s; 
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Blog post link styling */
+div.blog-col a {
+  position: relative; /* Positioned relative for the hover effect */
+  font-weight: 600; 
+  width: fit-content; 
+  padding: 5px; 
+  text-align: left; 
+  color: #fff; 
+  text-decoration: none; 
+  overflow: hidden; /* Hide overflow */
+  z-index: 0; /* Layer the link correctly */
+}
+
+/* Link hover effect styling with a background color transition */
+div.blog-col a::after {
+  content: ""; /* No content, just the hover effect */
+  position: absolute; /* Absolute position for the background effect */
+  /* Align the link */
+  left: 0; 
+  bottom: 0; 
+  /* Full dimensions of the link */
+  height: 100%; 
+  width: 100%; 
+  background-color: #0750d0; /* Blue background on hover */
+  transform: scaleX(0); /* Start with the background scaled to 0 */
+  transform-origin: bottom right; /* Start the transform from the bottom right */
+  transition: transform 0.2s ease-out; /* Smooth transition for the background effect */
+  z-index: -1; /* Layer the background effect behind the text */
+}
+
+/* Hover effect for the link (expand the background) */
+div.blog-col a:hover::after {
+  transform: scaleX(1); /* Expand the background to full width */
+  transform-origin: bottom left; /* Change the transform origin to bottom left */
+}
+
+/* Hover effect for the link text */
+div.blog-col a:hover {
+  z-index: 0; 
+}
+
+
+/** GALLERY **/
+
+/* Gallery container with margin below */
+div.gallery-container {
+  margin-bottom: 50px;
+}
+
+/* Gallery columns with inline display */
+div.gallery-col {
+  position: relative; /* For positioning the caption */
+  display: inline-block; /* Aligns items in a row */
+  margin-bottom: 30px; /* Space below each gallery item */
+}
+
+/* Gallery images with fixed height and cover fit */
+div.gallery-col img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+/* Modal body with no padding */
+div.modal-body {
+  padding: 0;
+}
+
+/* Image caption positioning and styling */
+.image-caption {
+  position: absolute; /* Positioning on top of image */
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  bottom: 0; /* Align at the bottom of the image */
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Show caption on hover */
+div.gallery-col:hover .image-caption {
+  opacity: 1;
+}
+
+/* Caption text styling */
+.image-caption span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Title font styling */
+.image-caption span:nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Description font styling */
+.image-caption span:nth-child(2) {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+}
+
+
+/** ABOUT US **/
+
+/* Container for About Us section with space below */
+div.about-us-info-container {
+  margin-bottom: 150px;
+}
+
+/* About Us image styling */
+div.about-us-info-col img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Accordion navigation border and padding */
+div.accordion-nav {
+  border-bottom: 1px solid #343434;
+  padding-bottom: 10px;
+}
+
+/* Accordion button styling */
+button.accordion-button {
+  margin: 0 10px;
+  width: auto;
+  padding: 10px 15px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Hover effect for accordion buttons */
+button.accordion-button:hover {
+  transition: 0.3s;
+  color: #0750d0; /* Change color to blue on hover */
+}
+
+/* Active accordion button styling */
+button.accordion-button:not(.collapsed) {
+  background-color: #0750d0; /* Blue background when active */
+  color: #fff;
+}
+
+/* Accordion body styling */
+div.accordion-body {
+  background-color: #000; 
+  color: #fff;
+  text-align: left;
+}
+
+/* Accordion body header styling */
+div.accordion-body h5 {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+/* Paragraph text in accordion body */
+div.accordion-body p {
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+}
+
+/* Accordion item styling */
+div.accordion-item {
+  border: none;
+}
+
+/* Accordion item link styling */
+div.accordion-item a {
+  position: relative; /* This ensures that the background overlay effect can be applied absolutely over the link */
+  font-size: 18px; 
+  padding: 10px; 
+  font-weight: 600; 
+  text-align: left; 
+  color: #fff; 
+  text-decoration: none; 
+  overflow: hidden; /* Ensures any content that extends beyond the boundaries of the element is hidden */
+  z-index: 0; /* Keeps the link behind any background elements */
+}
+
+/* Hover Effect for Accordion Item Links */
+div.accordion-item a::after {
+  content: ""; /* No content, just the hover effect */
+  position: absolute; /* Absolute position for the background effect */
+  /* Align the link */
+  left: 0; 
+  bottom: 0; 
+  /* Full dimensions of the link */
+  height: 100%; 
+  width: 100%; 
+  background-color: #0750d0; /* Blue background on hover */
+  transform: scaleX(0); /* Start with the background scaled to 0 */
+  transform-origin: bottom right; /* Start the transform from the bottom right */
+  transition: transform 0.2s ease-out; /* Smooth transition for the background effect */
+  z-index: -1; /* Layer the background effect behind the text */
+}
+
+/* Hover effect for expanding background overlay */
+div.accordion-item a:hover::after {
+  transform: scaleX(1); /* Expands the background effect*/
+  transform-origin: bottom left; /* Defines the scaling origin at the bottom left for expansion */
+}
+
+
+/* Link hover effect to expand the background */
+div.accordion-item a:hover::after {
+  transform: scaleX(1); /* Expand the background */
+  transform-origin: bottom left;
+}
+
+/* Ensure link text stays above the background */
+div.accordion-item a:hover {
+  z-index: 0;
+}
+
+/* Gaming image styling */
+.gaming-img {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Team member column styling */
+div.team-col {
+  color: #fff; /* White text for team section */
+}
+
+/* Team member paragraph styling */
+div.team-col p {
+  font-family: "Proxima Nova", sans-serif;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px; /* Space above the text */
+}
+
+/* Team member image styling */
+div.team-col img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Ensure the image covers the space */
+}
+
+
+/** CONTACT **/
+
+/* Map container with top margin */
+div.map-container {
+  margin-top: 90px;
+}
+
+/* Contact section container with top and bottom margins */
+div.contact-container {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* Contact title styling with large font size and white color */
+.contact-title {
+  color: #fff; 
+  font-size: 36px; 
+  font-weight: bold; 
+  margin-bottom: 40px; 
+  font-family: "Poppins", sans-serif; 
+}
+
+/* Input field styling for contact form */
+div.contact-container input {
+  padding: 10px; 
+  border-radius: 0; 
+  font-family: "Proxima Nova", sans-serif; 
+}
+
+/* Textarea field styling for the contact form */
+div.contact-container textarea {
+  border-radius: 0; 
+  margin: 30px 0; 
+  font-family: "Proxima Nova", sans-serif; 
+}
+
+/* Send button styling with gradient background */
+.send-button {
+  color: #fff; /* White text color */
+  background: linear-gradient(135deg, #a1052c, #0750d0); /* Gradient background */
+  width: fit-content; /* Width adjusts based on content */
+  font-family: "Poppins", sans-serif; 
+  padding: 10px 15px; 
+  border-radius: 0; 
+  font-weight: 600; 
+  border: none; 
+}
+
+/* Hover effect for send button with darker gradient */
+.send-button:hover {
+  background: linear-gradient(135deg, #890626, #0640a5); /* Darker gradient on hover */
+}
+
+/* Contact info section with top margin */
+div.contact-info {
+  margin-top: 80px;
+}
+
+/* Contact info section header styling */
+div.contact-info h5 {
+  color: #fff; 
+  font-weight: bold; 
+  font-family: "Proxima Nova", sans-serif; 
+}
+
+/* Contact info paragraph styling */
+div.contact-info p {
+  color: #fff; 
+  margin-bottom: 20px; /* Margin below each paragraph */
+  font-family: "Proxima Nova", sans-serif; 
+}
+
+
+/** SHOP **/
+
+/* Shop column with white text and left alignment */
+div.shop-col {
+  color: #fff; 
+  text-align: left; 
+}
+
+/* Product category styling with gray color and smaller font */
+.product-category {
+  font-size: 14px; 
+  margin-top: 15px; 
+  color: #4e4e4e; 
+  font-family: "Proxima Nova", sans-serif; 
+}
+
+/* Bold product name or other key information */
+div.shop-col span {
+  font-weight: 600;
+  font-size: 18px; 
+  font-family: "Poppins", sans-serif; 
+}
+
+/* Image settings for products */
+div.shop-col img {
+  width: 100%; /* Ensure image covers the full container width */
+  object-fit: cover; /* Maintain aspect ratio */
+  padding-right: 10px; 
+  height: 400px; /* Fixed height for product images */
+}
+
+/* Flex container to distribute items across the shop section */
+.top-shop-content-div {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space out elements evenly */
+  margin-bottom: 25px; 
+}
+
+/* Styling for spans inside the top content */
+.top-shop-content-div span {
+  color: #b8b8b8; 
+}
+
+/* Styling for select dropdown */
+.top-shop-content-div select {
+  color: #c5c5c5; 
+  background-color: #000; 
+  padding: 8px; 
+  border: 1px solid #343434; 
+}
+
+/** SIDEBAR SECTION **/
+
+/* Sidebar column styling with white text */
+.sidebar-col {
+  color: #fff; 
+  font-family: "Proxima Nova", sans-serif; 
+}
+
+/* Sidebar heading styling */
+.sidebar-col h5 {
+  font-family: "Poppins", sans-serif; 
+  font-size: 20px; 
+  margin-bottom: 40px; 
+}
+
+/* Styling for the "Follow Us" section text */
+.follow-us-div p {
+  font-weight: 600; 
+  margin-right: 10px; 
+}
+
+/* Social media icon styling */
+.follow-us-div i {
+  color: #fff; 
+  margin: 5px; 
+}
+
+/* Hover effect for social media icons (change to blue) */
+.follow-us-div i:hover {
+  transition: 0.3s; 
+  color: #0750d0; /* Change color on hover */
+}
+
+/* Input field with icon, positioned relative to the container */
+.input-with-icon {
+  position: relative; /* Needed for absolute positioning of icon */
+  width: 100%; 
+  margin-top: 10px; 
+  margin-bottom: 30px; 
+}
+
+/* Input field styling, with padding and color */
+.input-with-icon input {
+  color: #c5c5c5; 
+  background-color: #000; 
+  border: 1px solid #343434; 
+  width: 100%; /* Full width input */
+  padding-right: 40px; 
+  padding-left: 10px; 
+  height: 40px; /* Height of the input field */
+}
+
+/* Icon inside input field, positioned on the right */
+.input-with-icon i {
+  position: absolute; /* Absolutely positioned inside input */
+  right: 10px; 
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Align the icon exactly in the center */
+  color: #c5c5c5; 
+  font-size: 16px; 
+  pointer-events: none; /* Disable interaction with the icon */
+}
+
+/* Placeholder text styling for input fields */
+.enter-input::placeholder {
+  color: #c5c5c5; 
+}
+
+/* Sidebar category heading styling */
+.sidebar-h5 {
+  font-family: "Poppins", sans-serif; 
+  font-size: 20px;
+  margin-bottom: 40px; 
+  margin-top: 40px; 
+}
+
+/* Category container with bottom border */
+.category-div {
+  align-items: center; 
+  width: 100%; 
+  border-bottom: 1px solid #343434; /* Bottom border for separation */
+  padding-bottom: 10px; 
+  margin-bottom: 20px; 
+}
+
+/* Remove bottom border for the last category */
+.category-div:last-of-type {
+  border-bottom: none;
+}
+
+/* Icon inside the category, with space to the right */
+.category-div i {
+  margin-right: 20px; 
+}
+
+/* Gallery images in the sidebar */
+div.sidebar-gallery-col img {
+  width: 100%; /* Full width images */
+  height: 100px; /* Fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Button for tag filters */
+.tag-button {
+  font-family: "Poppins", sans-serif; 
+  margin-bottom: 10px; /* Space below the button */
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  margin-right: 5px; 
+  background-color: #323232; /* Dark background color */
+}
+
+/* Styling for related products section */
+.related-product-div {
+  display: flex; 
+  width: 100%; /* Full width */
+  align-items: center; 
+}
+
+/* Image for related products */
+.related-product-div img {
+  width: 30%; /* Set width for the product image */
+  height: 100px; /* Fixed height */
+  margin-bottom: 20px; 
+}
+
+/* Information about the related product */
+.info-related-product {
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  margin-left: 20px; 
+}
+
+/* First span inside related product info (name, title, etc.) */
+.info-related-product span:first-of-type {
+  font-family: "Poppins", sans-serif; 
+  font-weight: 600; 
+}
+
+/* Filter section styling */
+.filter-div {
+  width: auto; 
+  font-size: 18px; 
+  color: #fff; 
+  margin-bottom: 15px; 
+}
+
+/* Filter text styling with italic font */
+.filter-div span {
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0 3px; 
+  font-style: italic; /* Italic text */
+}
+
+/* Styling for the filter text when hovered */
+.filter-text {
+  display: inline-block; /* Keep filter text inline */
+  padding: 0 5px; 
+}
+
+/* Hover effect for filter text */
+.filter-text:hover {
+  background-color: #a33c0d; /* Orange background on hover */
+  transition: 0.3s; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Focus effect for filter text */
+.filter-text:focus {
+  background-color: #a33c0d; /* Orange background when focused */
+}
+
+/* Hover effect for tags in the sidebar */
+.tags-div button:hover {
+  background-color: #0750d0; /* Blue background on hover */
+  transition: 0.3s; /* Smooth transition */
+}
+
+/* Price Section Styling */
+.price-p {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+/* Rating Section Styling */
+.rating-span {
+  color: rgb(255, 204, 0); /* Gold color for rating score */
+  font-size: 24px; 
+}
+
+/* Product Title Section Styling */
+.product-title {
+  font-size: 24px; 
+}
+
+/* Sale Percentage Section Styling */
+.sale-percentage-span {
+  color: #fff; 
+  padding: 0 5px; /* Adds spacing around the discount text */
+  background-color: #0750d0; /* Blue background for the discount */
+  margin-right: 5px; /* Space between the discount and price */
+}
+
+/* "Buy Now" button with gradient background for a modern look */
+.buy-button {
+  color: #fff; /* White text */
+  background: linear-gradient(135deg, #a1052c, #0750d0); /* Gradient background */
+  width: fit-content; /* Button width adjusts to content */
+  font-family: "Poppins", sans-serif;
+  padding: 5px 10px; 
+  font-weight: 600; 
+  border: none;
+  margin-left: 10px; /* Adds space between button and surrounding elements */
+}
+
+/* Darker gradient on hover for interactive effect */
+.buy-button:hover {
+  background: linear-gradient(135deg, #890626, #0640a5);
+}
+
+/* Sorting Section Styling */
+.sorting-div {
+  margin-bottom: 20px; /* Adds spacing below the sorting options */
+}
+
+/* Sorting Dropdowns Styling */
+.sorting-div select {
+  margin: 0 10px; /* Adds horizontal spacing between dropdowns */
+}
+
+/* Page Number Section Styling */
+.page-number-div {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #fff; /* White text for visibility */
+  margin-bottom: 20px; /* Space below pagination controls */
+}
+/* Pagination Button Styling */
+.page-number-div button {
+  color: #c5c5c5; 
+  background-color: #000; 
+  font-size: 22px;
+  padding: 0px 12px; /* Padding for a balanced button */
+  border: 1px solid #343434; /* Dark border for the button */
+}
+
+/* Hover Effect for Pagination Buttons */
+.page-number-div button:hover {
+  background-color: #343434; /* Darken background on hover */
+  transition: 0.2s; /* Smooth transition for the hover effect */
+}
+
+/* Pagination Text Styling */
+.page-number-div span {
+  font-size: 22px; /* Consistent font size for pagination text */
+  margin: 0 20px; /* Space between page numbers */
+}

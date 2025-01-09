@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrapCSS/bootstrap.css" />
+    <title>GameFusion Studios</title>
+  </head>
+  <body>
+    <!-- Header section with navigation bar -->
+    <header>
+      <nav id="mynav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Company logo with a link to the homepage -->
+          <a class="navbar-logo" href="#">
+            <img src="assets/logos/logo-light.png" alt="logo-img" />
+          </a>
+
+          <!-- Button for toggling navigation in mobile view -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto navbar-links">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="blog.html">Blog</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="shop.html">Shop</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Gallery Title Section -->
+    <div class="container-fluid blog-title-container">
+      <div class="container blog-title-div">
+        <h3>Gallery</h3>
+      </div>
+    </div>
+
+    <!-- Filter Section for Gallery Categories -->
+    <div class="container">
+      <div class="row">
+        <div class="filter-div">
+          <!-- Filters for different gallery categories -->
+          <span class="filter-text">ALL</span>
+          <span>/</span>
+          <span class="filter-text">DOTA 2</span>
+          <span>/</span>
+          <span class="filter-text">FORTNITE</span>
+          <span>/</span>
+          <span class="filter-text">CSGO</span>
+          <span>/</span>
+          <span class="filter-text">PUBG</span>
+          <span>/</span>
+          <span class="filter-text">STREAMS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Viewing Images in Full Size -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img id="modalImage" src="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Images Section -->
+    <div class="container gallery-container">
+      <!-- First Row of Gallery Images -->
+      <div class="row justify-content-center align-items-center text-center">
+        <!-- First Image -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left gallery-col"
+        >
+          <div class="gallery-img-container">
+            <img
+              class="gallery-img"
+              src="assets/background-img/cyberpunk.jpg"
+            />
+            <div class="image-caption">
+              <span class="title">Cyberpunk</span>
+              <span class="subtitle">Like The Arcane World</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Image -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left gallery-col"
+        >
+          <div class="gallery-img-container">
+            <img
+              class="gallery-img"
+              src="assets/background-img/game-console.jpg"
+            />
+            <div class="image-caption">
+              <span class="title">Game Console</span>
+              <span class="subtitle">Latest gaming tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row of Gallery Images -->
+      <div class="row justify-content-center align-items-center text-center">
+        <!-- First Image -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left gallery-col"
+        >
+          <div class="gallery-img-container">
+            <img class="gallery-img" src="assets/background-img/img1.jpg" />
+            <div class="image-caption">
+              <span class="title">A Mask On</span>
+              <span class="subtitle">A scenic view</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Image -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left gallery-col"
+        >
+          <div class="gallery-img-container">
+            <img class="gallery-img" src="assets/background-img/img2.jpg" />
+            <div class="image-caption">
+              <span class="title">Robots in the Nature</span>
+              <span class="subtitle">Nature at its finest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Row of Gallery Images -->
+      <div class="row justify-content-center align-items-center text-center">
+        <!-- First Image -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left gallery-col"
+        >
+          <div class="gallery-img-container">
+            <img class="gallery-img" src="assets/background-img/img3.jpg" />
+            <div class="image-caption">
+              <span class="title">Another War</span>
+              <span class="subtitle">The Unsettling View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Image -->
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-left justify-content-left gallery-col"
+        >
+          <div class="gallery-img-container">
+            <img class="gallery-img" src="assets/background-img/robots.jpg" />
+            <div class="image-caption">
+              <span class="title">Robots</span>
+              <span class="subtitle">The future is here</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row justify-content-center align-items-center text-center">
+          <!-- First Column: Company logo, email subscription, and quote -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <!-- Company logo -->
+            <img src="assets/logos/logo-light.png" /><br />
+            <!-- Email input field for subscription -->
+            <input type="email" placeholder="Enter your email" />
+            <!-- Subscribe button with an icon -->
+            <div class="suscribe-div">
+              <a href="#"> <i class="fa-solid fa-arrow-right"></i>Subscribe</a>
+            </div>
+            <!-- Motivational quote -->
+            <p>The world without photography will be meaningless to us.</p>
+          </div>
+
+          <!-- Second Column: Company address, phone, email, and social media links -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Address</h6>
+            <!-- Address, working hours, phone, and email -->
+            <p>Baker Street 223b London, CA 70413 Open: 9:30 AM - 5:30 PM</p>
+            <p>Phone: +1 (800) 456 37 11</p>
+            <p>Email: support@promo-theme.com</p>
+            <!-- Social media icons -->
+            <div class="social-media-div">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+
+          <!-- Third Column: Recent posts -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Posts</h6>
+            <!-- Recent blog posts with dates -->
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+          </div>
+
+          <!-- Fourth Column: Recent comments -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Comments</h6>
+            <!-- Recent comments by users -->
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script to load Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/8b39d50696.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External JavaScript file for custom functionality -->
+    <script src="javascript/app.js"></script>
+
+    <!-- Bootstrap JavaScript file for responsive design and components -->
+    <script src="bootstrapJS/bootstrap.js"></script>
+  </body>
+</html>

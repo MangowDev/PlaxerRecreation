@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to the custom CSS file for additional styles -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- Link to the Bootstrap CSS framework -->
+    <link rel="stylesheet" type="text/css" href="bootstrapCSS/bootstrap.css" />
+    <title>GameFusion Studios</title>
+  </head>
+  <body>
+    <!-- Header section with navigation bar -->
+    <header>
+      <nav id="mynav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Company logo with a link to the homepage -->
+          <a class="navbar-logo" href="#">
+            <img src="assets/logos/logo-light.png" alt="logo-img" />
+          </a>
+
+          <!-- Button for toggling navigation in mobile view -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto navbar-links">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="blog.html">Blog</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="shop.html">Shop</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel for showcasing key content -->
+    <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First carousel item -->
+        <div class="carousel-item active">
+          <div class="container-fluid custom-container">
+            <div class="container title-div">
+              <span>01</span>
+              <!-- Slide number -->
+              <h2>Games with idea & memorable design.</h2>
+              <button class="btn btn-primary">Watch now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Second carousel item -->
+        <div class="carousel-item">
+          <div class="container-fluid custom-container2">
+            <div class="container title-div">
+              <span>02</span>
+              <!-- Slide number -->
+              <h2>The new game & awesome concept.</h2>
+              <button class="btn btn-primary">Watch now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Third carousel item -->
+        <div class="carousel-item">
+          <div class="container-fluid custom-container3">
+            <div class="container title-div">
+              <span>03</span>
+              <!-- Slide number -->
+              <h2>Play with us in the all new games</h2>
+              <button class="btn btn-primary">Watch now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls for navigating the carousel -->
+      <a
+        class="carousel-control-prev"
+        href="#headerCarousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#headerCarousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Services section -->
+    <div class="container-fluid services-container">
+      <div class="container services-div">
+        <div class="row justify-content-center services-row">
+          <!-- Service 1: Twitch streaming -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center services-col"
+          >
+            <i class="fa-brands fa-twitch fa-5x"></i>
+            <!-- Service icon -->
+            <h5>Twitch streaming</h5>
+            <p>New streams every day from our best players.</p>
+          </div>
+          <!-- Service 2: eSports news -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center services-col"
+          >
+            <i class="fa-solid fa-gamepad fa-5x"></i>
+            <!-- Service icon -->
+            <h5>eSports news</h5>
+            <p>Get top streams and results from World Cyber Games.</p>
+          </div>
+          <!-- Service 3: Game tournaments -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center services-col"
+          >
+            <i class="fa-solid fa-network-wired fa-5x"></i>
+            <!-- Service icon -->
+            <h5>Game tournaments</h5>
+            <p>Create your own games tournaments and share results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us section -->
+    <div class="container about-us-container">
+      <div class="row justify-content-center about-us-row">
+        <!-- Text block -->
+        <div
+          class="col-lg-5 col-12 d-flex flex-column align-items-center justify-content-left text-left about-us-col"
+        >
+          <h4>Game theme for each direction and more.</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+          <a href="#">Read more</a>
+          <!-- Call-to-action link -->
+        </div>
+        <!-- Video block -->
+        <div
+          class="col-lg-5 col-12 d-flex flex-column align-items-center justify-content-center text-center about-us-col"
+        >
+          <iframe
+            width="460"
+            height="315"
+            src="https://www.youtube.com/embed/RJ3KfUoA1Ss?si=WYG5EHW__13Lpz6H"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent tournaments section -->
+
+    <!-- Block 1 -->
+    <div class="container-fluid recent-container">
+      <div class="row justify-content-center recent-row">
+        <!-- Recent event blocks -->
+        <div
+          class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center justify-content-left text-left recent-col"
+        >
+          <div class="img-recent-div">
+            <img
+              src="./assets/content-img/gamer.jpg"
+              alt="Gamer Image"
+              loading="lazy"
+            />
+            <div class="img-text">Club League - PUBG Game</div>
+          </div>
+          <!-- Event details -->
+          <div class="d-flex recent-col-row">
+            <!-- Number of groups and players -->
+            <div
+              class="col-lg-3 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">4 GROUPS</span>
+              <span class="info-blue-span">32 Players</span>
+            </div>
+            <!-- Prize pool information -->
+            <div
+              class="col-lg-4 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">PRIZE POOL</span>
+              <span class="info-blue-span">4000€</span>
+            </div>
+            <!-- Date and time of the event -->
+            <div
+              class="col-lg-6 col-4 d-flex flex-column justify-content-center text-right recent-info"
+            >
+              <span>MAR.26.2020 - 04:13 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div
+          class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center justify-content-left text-left recent-col"
+        >
+          <!-- Image block with caption -->
+          <div class="img-recent-div">
+            <img
+              src="./assets/content-img/gamer2.jpg"
+              alt="Gamer Image"
+              loading="lazy"
+            />
+            <div class="img-text">Club League - Fortnite Game</div>
+          </div>
+          <!-- Event details -->
+          <div class="d-flex recent-col-row">
+            <!-- Number of groups and players -->
+            <div
+              class="col-lg-3 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">5 GROUPS</span>
+              <span class="info-blue-span">40 Players</span>
+            </div>
+            <!-- Prize pool information -->
+            <div
+              class="col-lg-4 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">PRIZE POOL</span>
+              <span class="info-blue-span">5000€</span>
+            </div>
+            <!-- Date and time of the event -->
+            <div
+              class="col-lg-6 col-4 d-flex flex-column justify-content-center text-right recent-info"
+            >
+              <span>APR.10.2020 - 02:15 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div
+          class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center justify-content-left text-left recent-col"
+        >
+          <!-- Image block with caption -->
+          <div class="img-recent-div">
+            <img
+              src="./assets/content-img/gamer3.jpg"
+              alt="Gamer Image"
+              loading="lazy"
+            />
+            <div class="img-text">Club League - Call of Duty</div>
+          </div>
+          <!-- Event details -->
+          <div class="d-flex recent-col-row">
+            <!-- Number of groups and players -->
+            <div
+              class="col-lg-3 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">6 GROUPS</span>
+              <span class="info-blue-span">48 Players</span>
+            </div>
+            <!-- Prize pool information -->
+            <div
+              class="col-lg-4 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">PRIZE POOL</span>
+              <span class="info-blue-span">6000€</span>
+            </div>
+            <!-- Date and time of the event -->
+            <div
+              class="col-lg-6 col-4 d-flex flex-column justify-content-center text-right recent-info"
+            >
+              <span>APR.20.2020 - 03:30 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div
+          class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center justify-content-left text-left recent-col"
+        >
+          <!-- Image block with caption -->
+          <div class="img-recent-div">
+            <img
+              src="./assets/content-img/gamer4.jpg"
+              alt="Gamer Image"
+              loading="lazy"
+            />
+            <div class="img-text">Club League - Apex Legends</div>
+          </div>
+          <!-- Event details -->
+          <div class="d-flex recent-col-row">
+            <!-- Number of groups and players -->
+            <div
+              class="col-lg-3 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">8 GROUPS</span>
+              <span class="info-blue-span">64 Players</span>
+            </div>
+            <!-- Prize pool information -->
+            <div
+              class="col-lg-4 col-4 d-flex flex-column justify-content-center text-left recent-info"
+            >
+              <span class="info-span">PRIZE POOL</span>
+              <span class="info-blue-span">8000€</span>
+            </div>
+            <!-- Date and time of the event -->
+            <div
+              class="col-lg-6 col-4 d-flex flex-column justify-content-center text-right recent-info"
+            >
+              <span>MAY.5.2020 - 01:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid matches-container">
+      <div class="container matches-div">
+        <!-- Matches header and filters -->
+        <div class="latest-matches-div">
+          <h3>Latest matches</h3>
+          <div>
+            <div class="row">
+              <!-- Filter options -->
+              <div class="filter-div">
+                <span class="filter-text">ALL</span>
+                <span>/</span>
+                <span class="filter-text">DOTA 2</span>
+                <span>/</span>
+                <span class="filter-text">FORTNITE</span>
+                <span>/</span>
+                <span class="filter-text">CSGO</span>
+                <span>/</span>
+                <span class="filter-text">PUBG</span>
+                <span>/</span>
+                <span class="filter-text">STREAMS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Match rows -->
+        <!-- Match Block Template -->
+        <div class="row match-row align-items-center">
+          <!-- Team 1 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- VS -->
+          <div
+            class="col-lg-1 col-md-1 col-sm-2 col-4 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <h6>VS</h6>
+          </div>
+
+          <!-- Team 2 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mt-sm-3 mt-3 ms-lg-3 ms-md-2"
+          >
+            <h5 class="text-center text-md-start">
+              ESPORT LEAGUE-CS GO DIVISION
+            </h5>
+            <p class="text-center text-md-start">DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-12 col-12 d-flex flex-row justify-content-center text-center align-items-center streaming-div mt-sm-3 mt-3"
+          >
+            <i class="fa-brands fa-twitch fa-2x me-2"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+
+        <div class="row match-row align-items-center">
+          <!-- Team 1 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- VS -->
+          <div
+            class="col-lg-1 col-md-1 col-sm-2 col-4 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <h6>VS</h6>
+          </div>
+
+          <!-- Team 2 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mt-sm-3 mt-3 ms-lg-3 ms-md-2"
+          >
+            <h5 class="text-center text-md-start">
+              ESPORT LEAGUE-CS GO DIVISION
+            </h5>
+            <p class="text-center text-md-start">DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-12 col-12 d-flex flex-row justify-content-center text-center align-items-center streaming-div mt-sm-3 mt-3"
+          >
+            <i class="fa-brands fa-twitch fa-2x me-2"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+        <div class="row match-row align-items-center">
+          <!-- Team 1 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- VS -->
+          <div
+            class="col-lg-1 col-md-1 col-sm-2 col-4 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <h6>VS</h6>
+          </div>
+
+          <!-- Team 2 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mt-sm-3 mt-3 ms-lg-3 ms-md-2"
+          >
+            <h5 class="text-center text-md-start">
+              ESPORT LEAGUE-CS GO DIVISION
+            </h5>
+            <p class="text-center text-md-start">DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-12 col-12 d-flex flex-row justify-content-center text-center align-items-center streaming-div mt-sm-3 mt-3"
+          >
+            <i class="fa-brands fa-twitch fa-2x me-2"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+        <div class="row match-row align-items-center">
+          <!-- Team 1 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- VS -->
+          <div
+            class="col-lg-1 col-md-1 col-sm-2 col-4 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <h6>VS</h6>
+          </div>
+
+          <!-- Team 2 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mt-sm-3 mt-3 ms-lg-3 ms-md-2"
+          >
+            <h5 class="text-center text-md-start">
+              ESPORT LEAGUE-CS GO DIVISION
+            </h5>
+            <p class="text-center text-md-start">DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-12 col-12 d-flex flex-row justify-content-center text-center align-items-center streaming-div mt-sm-3 mt-3"
+          >
+            <i class="fa-brands fa-twitch fa-2x me-2"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+        <div class="row match-row align-items-center">
+          <!-- Team 1 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- VS -->
+          <div
+            class="col-lg-1 col-md-1 col-sm-2 col-4 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <h6>VS</h6>
+          </div>
+
+          <!-- Team 2 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mt-sm-3 mt-3 ms-lg-3 ms-md-2"
+          >
+            <h5 class="text-center text-md-start">
+              ESPORT LEAGUE-CS GO DIVISION
+            </h5>
+            <p class="text-center text-md-start">DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-12 col-12 d-flex flex-row justify-content-center text-center align-items-center streaming-div mt-sm-3 mt-3"
+          >
+            <i class="fa-brands fa-twitch fa-2x me-2"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+        <div class="row match-row align-items-center">
+          <!-- Team 1 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- VS -->
+          <div
+            class="col-lg-1 col-md-1 col-sm-2 col-4 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <h6>VS</h6>
+          </div>
+
+          <!-- Team 2 -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex flex-column justify-content-center text-center align-items-center team-div"
+          >
+            <img
+              src="assets/content-img/gaming-logo1.jpg"
+              alt="gaming-logo1"
+              class="gaming-logo"
+            />
+            <h6>HERETICS</h6>
+            <span>136</span>
+          </div>
+
+          <!-- Match Info -->
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mt-sm-3 mt-3 ms-lg-3 ms-md-2"
+          >
+            <h5 class="text-center text-md-start">
+              ESPORT LEAGUE-CS GO DIVISION
+            </h5>
+            <p class="text-center text-md-start">DECEMBER 25, 2020 4:00 PM</p>
+          </div>
+
+          <!-- Streaming Info -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-12 col-12 d-flex flex-row justify-content-center text-center align-items-center streaming-div mt-sm-3 mt-3"
+          >
+            <i class="fa-brands fa-twitch fa-2x me-2"></i>
+            <span>Twitch stream</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unicon and Game Expo Section -->
+    <div class="container-fluid unicon-container">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-12 justify-content-left text-left unicon-col">
+            <!-- Title and description of Unicon & Game Expo -->
+            <h4>UNICON & GAME EXPO</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <!-- Button to view the schedule -->
+            <button>View Schedule</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counter Section to showcase various statistics -->
+    <div id="counterContainer" class="container-fluid counter-container">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Twitch Stream counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-brands fa-twitch fa-4x"></i>
+            <h4 id="counter1">1300+</h4>
+            <p>TWITCH STREAMS</p>
+          </div>
+          <!-- YouTube Stream counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-brands fa-youtube fa-4x"></i>
+            <h4 id="counter2">1100+</h4>
+            <p>YOUTUBE STREAMS</p>
+          </div>
+          <!-- Past Games counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-solid fa-computer fa-4x"></i>
+            <h4 id="counter3">900+</h4>
+            <p>PAST GAMES</p>
+          </div>
+          <!-- Professional Teams counter -->
+          <div
+            class="col-lg-3 col-12 d-flex flex-column align-items-center justify-content-center text-center counter-col"
+          >
+            <i class="fa-solid fa-users-rectangle fa-4x"></i>
+            <h4 id="counter4">236+</h4>
+            <p>PRO TEAMS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Share Section -->
+    <div class="container-fluid share-container">
+      <!-- Title row to prompt sharing -->
+      <div class="row justify-content-center row1">
+        <div
+          class="col-12 d-flex flex-column align-items-center justify-content-center text-center share-title-col"
+        >
+          <h4>Share with <span>#GameFusionStudios</span></h4>
+        </div>
+      </div>
+      <!-- Row with a call to action to follow on social media -->
+      <div class="row justify-content-center row2">
+        <div
+          class="col-12 d-flex flex-column align-items-center justify-content-center text-center share-p-col"
+        >
+          <p>Follow me @GameFusionStudios</p>
+        </div>
+      </div>
+      <!-- Image gallery row -->
+      <div
+        class="row justify-content-center align-items-center text-center row3 g-0"
+      >
+        <!-- First set of images to share -->
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/cyberpunk.jpg" alt="Image 1" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/game-console.jpg" alt="Image 2" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img1.jpg" alt="Image 3" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img2.jpg" alt="Image 4" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img3.jpg" alt="Image 5" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/robots.jpg" alt="Image 6" />
+        </div>
+        <!-- Additional images for sharing -->
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/cyberpunk.jpg" alt="Image 7" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/game-console.jpg" alt="Image 8" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img1.jpg" alt="Image 9" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img2.jpg" alt="Image 10" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/img3.jpg" alt="Image 11" />
+        </div>
+        <div
+          class="col-lg-1 col-md-2 col-4 d-flex align-items-center justify-content-center share-img-col"
+        >
+          <img src="assets/background-img/robots.jpg" alt="Image 12" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row justify-content-center align-items-center text-center">
+          <!-- First Column: Company logo, email subscription, and quote -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <!-- Company logo -->
+            <img src="assets/logos/logo-light.png" /><br />
+            <!-- Email input field for subscription -->
+            <input type="email" placeholder="Enter your email" />
+            <!-- Subscribe button with an icon -->
+            <div class="suscribe-div">
+              <a href="#"> <i class="fa-solid fa-arrow-right"></i>Subscribe</a>
+            </div>
+            <!-- Motivational quote -->
+            <p>The world without photography will be meaningless to us.</p>
+          </div>
+
+          <!-- Second Column: Company address, phone, email, and social media links -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Address</h6>
+            <!-- Address, working hours, phone, and email -->
+            <p>Baker Street 223b London, CA 70413 Open: 9:30 AM - 5:30 PM</p>
+            <p>Phone: +1 (800) 456 37 11</p>
+            <p>Email: support@promo-theme.com</p>
+            <!-- Social media icons -->
+            <div class="social-media-div">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+
+          <!-- Third Column: Recent posts -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Posts</h6>
+            <!-- Recent blog posts with dates -->
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+            <span>Kills you slowly</span>
+            <p>November 8, 2019</p>
+          </div>
+
+          <!-- Fourth Column: Recent comments -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-left justify-content-left footer-col"
+          >
+            <h6>Recent Comments</h6>
+            <!-- Recent comments by users -->
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+            <p><span>Elena Cobsky</span> - Driving Engagement Online</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script to load Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/8b39d50696.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External JavaScript file for custom functionality -->
+    <script src="javascript/app.js"></script>
+
+    <!-- Bootstrap JavaScript file for responsive design and components -->
+    <script src="bootstrapJS/bootstrap.js"></script>
+  </body>
+</html>
